@@ -1,0 +1,31 @@
+# Palani Karthikeyan - Trainer 07-10-2026 10:58 •
+import time 
+
+
+devices = ['switches','routers','ethernet','rs232']
+
+
+config = {'ID':'A-123','app':'demoApp','port':3030,'fname':'/etc/app.cfg'}
+
+
+wobj = open("r2.log","w")
+for var in devices:
+	wobj.write(f"Device name:{var}\n")
+
+
+wobj.write("---- done -----\n")
+
+
+'''
+ID = A-123
+app = demoApp
+port = 3030
+fname = /etc/app.cfg
+'''
+for var in config:
+	wobj.write(f"{var} = {config[var]}\n")
+
+
+wobj.write("-------- Done -------\n")
+wobj.write(f"Created on {time.ctime()}\n")
+wobj.close()
