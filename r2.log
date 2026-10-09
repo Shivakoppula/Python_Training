@@ -1,0 +1,11 @@
+Device name:switches
+Device name:routers
+Device name:ethernet
+Device name:rs232
+---- done -----
+ID = A-123
+app = demoApp
+port = 3030
+fname = /etc/app.cfg
+-------- Done -------
+Created on Wed Oct  7 11:00:06 2026
